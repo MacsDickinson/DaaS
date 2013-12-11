@@ -1,4 +1,4 @@
-YaaS
+DaaS
 ====
 
-Year as a Service
+Date as a Service
