@@ -42,7 +42,7 @@ namespace DaaS
                 {
                 }
 
-                string response = !string.IsNullOrEmpty(format) ? DateTime.Now.ToString(format, culture) : DateTime.Now.ToString(culture);
+                string response = !string.IsNullOrEmpty(format) ? DateTime.UtcNow.ToString(format, culture) : DateTime.UtcNow.ToString(culture);
 
                 context.Response.ContentType = "text/plain";
                 return context.Response.WriteAsync(response);
